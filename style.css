@@ -26,9 +26,19 @@
  
  .h1 {
      font-family: 'Muli', sans-serif;
-     font-size: 100px;
-     color: #494949;
+     font-size: 300px;
+     color: #cc0a0a;
      font-weight: 700;
+     margin: 0 auto;
+ }
+ 
+ #startText {
+     font-family: 'Muli', sans-serif;
+     font-size: 90px;
+     color: #4e4e4e;
+     font-weight: 700;
+     margin-top: 300px;
+     text-align: center;
  }
  
  .h2 {
@@ -37,17 +47,76 @@
      color: #000;
  }
  
+ .h3 {
+     font-family: 'Muli', sans-serif;
+     font-size: 70px;
+     color: #4e4e4e;
+     font-weight: 400;
+     margin-top: 30%;
+ }
+ 
+ .button {
+     font-family: 'Muli', sans-serif;
+     font-size: 24px;
+     color: #fff;
+     text-align: center;
+     width: 150px;
+     border-radius: 50px;
+     border: none;
+     height: 50px;
+     background-color: #CE1D0F;
+     display: block;
+     margin: 0 auto;
+ }
+ /*fade effekten på hovedtekst*/
+ 
  @keyframes fadeInUp {
-     from {
+     0% {
+         position: absolute;
+         bottom: -5rem;
          opacity: 0;
-         transform: translate3d(0, 100%, 0);
      }
-     to {
+     75% {
+         position: absolute;
+         bottom: 25%;
          opacity: 1;
-         transform: none;
+     }
+     100% {
+         opacity: 0;
      }
  }
  
  .fadeInUp {
      animation-name: fadeInUp;
+ }
+ /*puls effekten*/
+ 
+ @keyframes pulse {
+     25% {
+         -webkit-transform: scale(1.2);
+         -ms-transform: scale(1.2);
+         transform: scale(1.2);
+     }
+     75% {
+         -webkit-transform: scale(0.8);
+         -ms-transform: scale(0.8);
+         transform: scale(0.8);
+     }
+ }
+ /*.pulse {
+     display: inline-block;
+     -webkit-transform: translateZ(0);
+     -ms-transform: translateZ(0);
+     transform: translateZ(0);
+ }*/
+ 
+ .pulse:hover {
+     -webkit-animation-name: pulse;
+     animation-name: pulse;
+     -webkit-animation-duration: 1s;
+     animation-duration: 1s;
+     -webkit-animation-timing-function: linear;
+     animation-timing-function: linear;
+     -webkit-animation-iteration-count: infinite;
+     animation-iteration-count: infinite;
  }
