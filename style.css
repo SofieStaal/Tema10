@@ -5,7 +5,13 @@
  body {
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
-     background: #c9c9c9;
+     background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #c9c9c9 100%);
+     background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, #c9c9c9 100%);
+     background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #c9c9c9 100%);
+     background: radial-gradient(center, ellipse cover, #ffffff 0%, #c9c9c9 100%);
+     height: 100vh;
+     width: 100%;
+     background-repeat: no-repeat;
  }
  
  .header {
@@ -15,13 +21,24 @@
      position: fixed;
      top: 0;
      left: 0;
+     display: flex;
+     align-items: center;
  }
  
  #logo {
      width: 60px;
      height: auto;
-     float: left;
      padding: 10px;
+ }
+ 
+ .organer {
+     display: flex;
+     justify-content: center;
+     height: 300px;
+ }
+ 
+ img {
+     width: 18%;
  }
  
  h1 {
@@ -30,6 +47,7 @@
      color: #cc0a0a;
      font-weight: 700;
      margin: 0 auto;
+     margin-bottom: 25px;
  }
  
  #startText {
@@ -78,6 +96,12 @@
      margin: 0 auto;
  }
  
+ .svar {
+     display: flex;
+     justify-content: center;
+     margin: 25px;
+ }
+ 
  .answer {
      font-family: 'Muli', sans-serif;
      font-size: 14px;
@@ -91,6 +115,12 @@
      border-width: thin;
      height: 50px;
      margin: 0 auto;
+     background-color: transparent;
+ }
+ 
+ .answer:hover {
+     color: #fff;
+     background-color: #CE1D0F;
  }
  /*fade effekten på hovedtekst*/
  
