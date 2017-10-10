@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html lang="no">h
+<html lang="no">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
 
@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <audio src="audio/HeartbeatSound.mp3" autoplay="autoplay">
+    </audio>
+
 
     <!-- header rødekors-->
 
@@ -33,16 +36,9 @@
     <div class="animated fadeInUp">
         <h1 id="startText">HVERT SEKUND TELLER</h1>
     </div>
-
-    <a href="game.html">
-        <button class="button pulse">start</button></a>
-
-
-
-    <script src="">
-
-
-    </script>
+    <a id="start" href="game.html" class="button pulse">
+        start
+    </a>
 </body>
 
 </html>

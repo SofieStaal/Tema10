@@ -1,7 +1,7 @@
  * {
      box-sizing: border-box;
  }
- 
+
  body {
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
@@ -13,7 +13,7 @@
      width: 100%;
      background-repeat: no-repeat;
  }
- 
+
  .header {
      width: 100vw;
      height: 60px;
@@ -24,23 +24,23 @@
      display: flex;
      align-items: center;
  }
- 
+
  #logo {
      width: 60px;
      height: auto;
      padding: 10px;
  }
- 
+
  .organer {
      display: flex;
      justify-content: center;
      height: 300px;
  }
- 
+
  img {
      width: 18%;
  }
- 
+
  h1 {
      font-family: 'Muli', sans-serif;
      font-size: 300px;
@@ -49,7 +49,7 @@
      margin: 0 auto;
      margin-bottom: 25px;
  }
- 
+
  #startText {
      font-family: 'Muli', sans-serif;
      font-size: 90px;
@@ -58,31 +58,74 @@
      margin-top: 300px;
      text-align: center;
  }
- 
+
  h2 {
      font-family: 'Muli', sans-serif;
      font-size: 24px;
      color: #000;
  }
- 
+
  h3 {
      font-family: 'Muli', sans-serif;
      font-size: 25px;
      color: #4e4e4e;
      font-weight: 700;
+     text-transform: uppercase;
  }
- 
+
+ /*stil til sekundetelleren*/
+
+ #tid {
+     font-family: 'Muli', sans-serif;
+     font-size: 45px;
+     color: #cc0a0a;
+     font-weight: 700;
+ }
+
+ .teller {
+     text-align: center;
+ }
+
  a {
+     border: none;
      text-decoration: none;
+
+
  }
- 
+
+ #start {
+     border-radius: 50px;
+     background-color: #CE1D0F;
+     color: #fff;
+     display: block;
+     font-family: 'Muli', sans-serif;
+     font-size: 24px;
+     height: 50px;
+     margin: 0 auto;
+     outline: none;
+     padding-top: 6px;
+     text-decoration: none;
+     text-align: center;
+     width: 150px;
+ }
+
  .spm h3 {
      display: block;
      margin-top: 10%;
      text-align: center;
  }
- 
- .button {
+
+ .spm h4 {
+     margin-top: 200px;
+     font-family: 'Muli', sans-serif;
+     font-size: 25px;
+     color: #4e4e4e;
+     font-weight: 700;
+     text-align: center;
+ }
+
+
+ button {
      font-family: 'Muli', sans-serif;
      font-size: 24px;
      color: #fff;
@@ -94,14 +137,21 @@
      background-color: #CE1D0F;
      display: block;
      margin: 0 auto;
+     outline: none;
  }
- 
+
+ .svarBox {
+     display: flex;
+     justify-content: center;
+     margin: 25px;
+ }
+
  .svar {
      display: flex;
      justify-content: center;
      margin: 25px;
  }
- 
+
  .answer {
      font-family: 'Muli', sans-serif;
      font-size: 14px;
@@ -117,13 +167,22 @@
      margin: 0 auto;
      background-color: transparent;
  }
- 
+
  .answer:hover {
      color: #fff;
      background-color: #CE1D0F;
  }
+
+ /*skjule spørsmål*/
+
+ .hidden {
+     display: none;
+ }
+
+
+
  /*fade effekten på hovedtekst*/
- 
+
  @keyframes fadeInUp {
      0% {
          position: absolute;
@@ -139,12 +198,13 @@
          opacity: 0;
      }
  }
- 
+
  .fadeInUp {
      animation-name: fadeInUp;
  }
+
  /*puls effekten*/
- 
+
  @keyframes pulse {
      25% {
          -webkit-transform: scale(1.2);
@@ -157,13 +217,8 @@
          transform: scale(0.8);
      }
  }
- /*.pulse {
-     display: inline-block;
-     -webkit-transform: translateZ(0);
-     -ms-transform: translateZ(0);
-     transform: translateZ(0);
- }*/
- 
+
+
  .pulse:hover {
      -webkit-animation-name: pulse;
      animation-name: pulse;
@@ -173,4 +228,19 @@
      animation-timing-function: linear;
      -webkit-animation-iteration-count: infinite;
      animation-iteration-count: infinite;
+ }
+
+
+
+ /*konfetti*/
+
+ canvas {
+     display: block;
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 1000;
+     pointer-events: none;
  }

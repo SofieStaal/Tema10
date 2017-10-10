@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 
-<html lang="no">h
+<html lang="no">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+
+    <title>tema 10</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 
 
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 
-    <title>tema 10</title>
 
 </head>
 
@@ -23,39 +25,97 @@
 
     <div class="header">
         <img id="logo" src="img/logo.png" alt="red cross logo">
-        <h2>Røde kors</h2>
+        <a href="index.html">
+            <h2>Røde kors</h2>
+        </a>
     </div>
     <!-- header rødekors-->
 
-    <div class="spm">
-        <h3>DU FINNER EN BEVISSTLØS PERSON, HVA ER DET FØRSTE DU GJØR?</h3>
-    </div>
 
-    <div class="svar">
-        <div class="svar 1">
-            <button class="answer">Sjekk om han reagerer på 
-tilrop og forsiktig risting.</button> </div>
+    <div class="conteiner">
+        <div class="question-1">
+            <div class="spm">
+                <h3>Du finner en bevisstløs person, hva er det første du gjør?</h3>
+            </div>
+            <div class="svarBox">
+                <div class="svar s1-1">
+                    <button class="riktig answer">Sjekk om han reagerer på tilrop og forsiktig risting.</button>
+                </div>
+                <div class="svar s1-2">
+                    <button class="feil answer">Sjekk om han reagerer når du slår han i ansiktet.</button>
+                </div>
+                <div class="svar s1-3">
+                    <button class="feil answer">Løp vakk så fort du kan, det kan være noe farlig i nærheten.</button>
+                </div>
+            </div>
+        </div>
 
-        <div class="svar 2">
-            <button class="answer">Sjekk om han reagerer når 
-            du slår han i ansiktet.</button></div>
-        <div class="svar 3">
-            <button class="answer">Løp vakk så fort du kan, det kan
-            være noe farlig i nærheten.</button> </div>
+        <div class="question-2 hidden">
+            <div class="spm">
+                <h3>Du skal starte hjerte- og lungeredning, hva gjør du?</h3>
+            </div>
+            <div class="svarBox">
+                <div class="svar s2-1">
+                    <button class="feil answer">Søker det opp på YouTube.</button>
+                </div>
+                <div class="svar s2-2">
+                    <button class="riktig answer">Starter med 2 innblåsninger og 30 brystkompresjoner.</button>
+                </div>
+                <div class="svar s2-3">
+                    <button class="feil answer">Starter med 30 brystkompresjoner og så 2 innblåsninger.</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-3 hidden">
+            <div class="spm">
+                <h3>Hvor mange brystkompresjoner skal du gjøre i minuttet?</h3>
+            </div>
+            <div class="svarBox">
+                <div class="svar s3-1">
+                    <button class="feil answer">Det holder med 30 stykker.</button>
+                </div>
+                <div class="svar s3-2">
+                    <button class="feil answer">Så mange, og så fort som du orker.</button>
+                </div>
+                <div class="svar s3-3">
+                    <button class="riktig answer">100 stykker, takten til "staying alive" holder deg i takt! </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-4 hidden">
+            <div class="spm">
+                <h4>Dette gikk ikke helt etter planen, les her om hva du skal gjøre i en nødssituasjon</h4>
+            </div>
+        </div>
+
+        <div class="question-5 hidden">
+            <div class="spm">
+                <h4>Hei og hå! Dette gikk jo strålende!</h4>
+            </div>
+        </div>
     </div>
 
     <div class="organer">
-
-        <img src="img/lunge_glad.svg" alt="glad lunge">
-        <img src="img/hjerte_glad.svg" alt="glad hjerte">
-        <img src="img/hjerne_glad.svg" alt="glad hjerne">
-
+        <img id="lunge" src="img/lunge_glad.svg" alt="glad lunge">
+        <img id="hjerte" src="img/hjerte_glad.svg" alt="glad hjerte">
+        <img id="hjerne" src="img/hjerne_glad.svg" alt="glad hjerne">
     </div>
 
-    <script src="">
 
+    <div class="teller">
+        <div id="tid">00:00</div>
+    </div>
 
-    </script>
+    <!-- confetti -->
+    <canvas id="canvas"></canvas>
+
+    <!-- javascript -->
+    <script src="js/count.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery.confetti.js"></script>
 </body>
 
 </html>
