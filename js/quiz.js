@@ -56,6 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector(".question-5").classList.toggle("hidden");
             } else {
                 document.querySelector(".question-4").classList.toggle("hidden");
+                document.querySelector(".info").classList.toggle("hidden");
+
             }
         }
 

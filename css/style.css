@@ -9,7 +9,7 @@
      background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, #c9c9c9 100%);
      background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #c9c9c9 100%);
      background: radial-gradient(center, ellipse cover, #ffffff 0%, #c9c9c9 100%);
-     height: 100vh;
+     height: 1000px;
      width: 100%;
      background-repeat: no-repeat;
  }
@@ -140,6 +140,9 @@
      outline: none;
  }
 
+
+
+
  .svarBox {
      display: flex;
      justify-content: center;
@@ -243,4 +246,29 @@
      bottom: 0;
      z-index: 1000;
      pointer-events: none;
+ }
+
+
+ /*info om førstehjelp*/
+
+ .whiteBox {
+     margin-top: 50px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .box1,
+ .box2 {
+     width: 350px;
+     height: 420px;
+     background-color: #fff;
+     margin: 30px;
+
+ }
+
+ p {
+     margin: 15px;
+     font-family: 'Muli', sans-serif;
+     font-size: 16px;
+     color: #4e4e4e;
  }
