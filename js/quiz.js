@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // brukeren valgte feil svaralternativ.
             // her bytter jeg bilder ut ifra hva slags knapp en trykker på.
             if (activeQuestion == 1) document.getElementById('lunge').src = "img/lunge_trist.svg";
-            if (activeQuestion == 2) document.getElementById('hjerte').src = "img/hjerte_trist.svg";
+            if (activeQuestion == 2) document.getElementById('hjerte').src = "svg/hjerte_trist.svg";
             if (activeQuestion == 3) document.getElementById('hjerne').src = "img/hjerne_trist.svg";
         }
 
